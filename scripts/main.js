@@ -38,5 +38,9 @@ $(document).ready(function () {
             }
         }
     })
+    
+    if($(".tab-pane").hasClass("active")) {
+        $(".tab-pane").addClass("show");
+    }
     AOS.init();
 })

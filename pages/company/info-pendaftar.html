@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <title>KerjaYuk | Report</title>
+    <title>KerjaYuk | Pendaftar</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
     <div class="nav-container h-100 w-100 nav-logged">
         <div class="container">
             <nav class="row navbar navbar-expand-lg navbar-light nav-logged">
-                <a href="../../pages/seeker/index.html" class="navbar-brand">
+                <a href="#" class="navbar-brand">
                     <h3>KerjaYuk</h3>
                 </a>
                 <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
@@ -53,47 +53,57 @@
     </div>
     <!-- End Navbar -->
 
+    <!-- Main -->
     <main>
-        <section class="section-form-report">
+        <section class="section-info-pendaftar">
             <div class="container">
-                <div class="card card-body report-card p-4">
-                    <h4 class="text-title font-weight-600">Laporkan Iklan Lowongan?</h4>
-                    <p class="text-inactive">Beritahu kami mengapa anda ingin melaporkan iklan lowongan tersebut</p>
-                    <form>
+                <!-- Store message here -->
+                <div class="message" data-message=""></div>
+                <!-- End Message Storage -->
+
+                <div class="card card-body border-0">
+                    <div class="card-header text-center border-bottom-0 px-0 mb-3">
+                        <img src="../../images/user1.jpg" alt="Foto Profil" class="image-cover profile-picture">
+                    </div>
+                    <form action="" method="">
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="Email Address">
+                            <label for="nama_pendaftar">Nama Pendaftar:</label>
+                            <input type="text" class="form-control" id="nama_pendaftar" placeholder="Nama Pendaftar"
+                                name="nama_pendaftar">
                         </div>
                         <div class="form-group">
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option selected>Report this advertisement as</option>
-                                <option>This is a fake account</option>
-                                <option>They’re pretending to be another company</option>
-                                <option>They’re attempting to share contact information</option>
-                                <option>Others</option>
-                            </select>
+                            <label for="program_studi">Program Studi:</label>
+                            <input type="text" class="form-control" id="program_studi" placeholder="Program Studi"
+                                name="program_studi">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                placeholder="Tuliskan alasan anda disini..."></textarea>
-                            <div class="button-controls-mobile d-block d-lg-none flex-lg-row ml-lg-0 mt-3">
-                                <button type="submit"
-                                    class="btn btn-green text-white d-block d-lg-inline-flex mb-2">Kirim</button>
-                                <a href="#" class="btn btn-default btn-grey d-block d-lg-inline-flex mr-0">Batal</a>
+                            <label for="program_studi">Lampiran:</label>
+                            <div class="attachment-list px-2 py-3" style="background-color: #DDDEDF;height:unset;">
+                                <div class=" row">
+                                    <div class="col-6 col-lg-4">
+                                        <div class="attachment-items bg-white p-2 d-flex flex-column justify-content-between"
+                                            style="min-height: 100px;">
+                                            <a class="mb-0 stretched-link text-dark text-decoration-none"
+                                                style="font-size:12px;" href="../../documents/test.pdf"
+                                                target="_blank">Muhammad
+                                                Fachrian CV</a>
+                                            <span class="font-weight-bold" style="font-size:14px;">PDF</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="button-controls-desktop d-none d-lg-flex ml-lg-0 mt-3">
-                                <a href="#"
-                                    class="btn btn-default btn-grey d-block d-lg-inline-flex mr-0 mr-md-2">Batal</a>
-                                <button type="submit"
-                                    class="btn btn-green text-white d-block d-lg-inline-flex mb-md-0">Kirim</button>
-                            </div>
                         </div>
+                        <a href="#" class="btn btn-green btn-block mb-2 mb-md-0 mt-4">Hubungi via Whatsapp</a>
+                        <button type="submit" class="btn btn-orange btn-block mb-2 mb-md-0 btn-confirm" href="#">Tambah
+                            ke Wishlist</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
+    <!-- End Main -->
 
+    <!-- Footer -->
     <footer class="footer-2-3 container-xxl mx-auto position-relative p-0">
         <div class="list-footer">
             <div class="row gap-md-0 gap-3">
@@ -220,6 +230,8 @@
 
     <script src="../../libraries/jquery/jquery-3.6.0.min.js"></script>
     <script src="../../libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="../../libraries/sweetalert/js/sweetalert2.all.min.js"></script>
+    <script src="../../scripts/alert.js"></script>
 </body>
 
 </html>
