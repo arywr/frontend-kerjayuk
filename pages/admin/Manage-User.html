@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../../libraries/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../styles/admin.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../libraries/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../libraries/aos/css/aos.css" />
+
+    <script src="https://kit.fontawesome.com/eff0ae10a6.js" crossorigin="anonymous"></script>
+
+    <title>KerjaYuk | Manage User</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="nav-container h-100 w-100 nav-logged">
+        <div class="container">
+            <nav class="row navbar navbar-expand-lg navbar-light nav-logged">
+                <a href="../../index.html" class="navbar-brand">
+                    <h3>KerjaYuk</h3>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+                    data-target="#navb">
+                    <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navb">
+                    <ul class="navbar-nav ml-auto mr-3">
+                        <li class="nav-item mx-md-2">
+                            <a href="#" class="nav-link"><i class="fa fa-fw fa-home"></i>Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-cog"></i>Manage
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Manage User</a>
+                              <a class="dropdown-item" href="#">Manage Company</a>
+                              <a class="dropdown-item" href="#">Manage Report</a>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-md-2">
+                            <a href="#" class="nav-link">Halo, Admin!</a>
+                        </li>
+                    </ul>
+                    <!-- Mobile Button -->
+                    <form action=""
+                        class="nav-button d-flex flex-column align-items-start form-inline d-sm-block d-lg-none">
+                        <button class="btn btn-red text-white btn-block">Keluar</button>
+                    </form>
+
+                    <!-- Desktop Button -->
+                    <form action="" class="form-inline d-none d-lg-block">
+                        <button class="btn btn-red text-white">Keluar</button>
+                    </form>
+                    </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start Sidebar -->  
+    <div class="row" id="body-row">
+        <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+            <ul class="list-group">
+                <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                    <small>MAIN MENU</small>
+                </li>
+                <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-light text-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-fw fa-home fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Home</span>
+                    </div>
+                </a>
+                <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-light text-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fas fa-cog fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Manage</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <div id='submenu2' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Manage User</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Manage Company</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Manage Report</span>
+                    </a>
+                </div>  
+                <a href="#submenu3" data-toggle="collapse" aria-expanded="false" class="bg-light text-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fas fa-sign-out-alt fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Sign Out</span>
+                    </div>
+                </a>          
+                
+            </ul>
+        </div>
+    <!-- End Sidebar -->
+    <!-- Tabel -->   
+        <div class="col">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default panel-table">
+                            <div class="panel-heading">
+                                <div class="form-inline my-2 my-lg-0">
+                                    <div class="form-outline">
+                                        <input type="search" id="form1" class="form-control" placeholder="Search..."
+                                        aria-label="Search" />
+                                    </div>
+                                    <div class="col col-xs-6 text-right">
+                                        <a href="#" class="btn btn-sm btn-primary btn-create">Tambah User</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row mt-1">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Nama Depan</th>
+                                    <th>Nama Belakang</th>
+                                    <th>Email</th>
+                                    <th>Alamat</th>
+                                    <th>Tanggal Lahir</th>
+                                    <th>Jenis Kelamin</th>
+                                    <th>No Telepon</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nama1</td>
+                                    <td>Nama2</td>
+                                    <td>Nama@gmail.com</td>
+                                    <td>Perumahan telkom mulyaharja</td>
+                                    <td>1/1/1999</td>
+                                    <td>Perempuan</td>
+                                    <td>+6281234567890</td>
+                                    <td>
+                                        <a href="#" class="btn btn-flat btn-xs" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn text-danger btn-flat btn-xs" data-toggle="modal"><i class="fa fa-trash"></i></a>
+                                    </td>
+                                </tr>         
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Tabel -->
+    <!-- Footer -->
+    <footer class="section-footer mt-5">
+    </footer>
+    <!-- End Footer -->
+
+    <script src="../../libraries/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="../../libraries/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="../../libraries/aos/js/aos.js"></script>
+    <script src="../../scripts/main.js"></script>
+</body>
+
+</html>
