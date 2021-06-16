@@ -1,0 +1,253 @@
+.section-profile-seeker,
+.section-form-profile-seeker {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.section-profile-seeker .avatar,
+.section-form-profile-seeker .avatar {
+    padding: 50px 0;
+    background: grey;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+   
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section-profile-seeker .avatar .img-wrapper,
+.section-form-profile-seeker .avatar .img-wrapper {
+    border-radius: 100%;
+}
+
+.section-profile-seeker .avatar img,
+.section-form-profile-seeker .avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 575px) {
+
+    .section-profile-seeker .button-controls-mobile .btn-green,
+    .section-form-profile-seeker .button-controls-mobile .btn-green {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+
+    .section-profile-seeker .button-controls-mobile .btn-green,
+    .section-form-profile-seeker .button-controls-mobile .btn-green {
+        width: 100%;
+    }
+}
+
+.section-profile-seeker .information {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-form-profile-seeker .profile-information {
+    padding: 50px 0;
+}
+
+.section-form-profile-seeker .profile-information .card {
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.wrapper.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.wrapper #sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    color: transparent;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 60%;
+}
+
+.wrapper #sidebar .sidebar-items {
+    margin-top: 30px;
+}
+
+.wrapper #sidebar.active {
+    margin-left: -250px;
+}
+
+.wrapper #sidebar .sidebar-header {
+    color: grey;
+    font-weight: 600;
+    padding: 20px;
+    height: 56px;
+}
+
+.wrapper #sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+.wrapper #sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+.wrapper #sidebar ul li a {
+    padding: 10px;
+    display: block;
+    color: #16272F;
+}
+
+.wrapper #sidebar ul li.active>a,
+.wrapper a[aria-expanded="true"] {
+    color: grey;
+    font-weight: 600;
+}
+
+.wrapper a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.wrapper .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.wrapper ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+.wrapper ul.CTAs {
+    padding: 20px;
+}
+
+.wrapper ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.wrapper a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+.wrapper a.article,
+.wrapper a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+.wrapper #content {
+    width: 100%;
+    min-height: 100vh;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 575px) {
+    .wrapper #content {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .wrapper #content {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper #content {
+        margin-left: 250px;
+    }
+}
+
+/*form profile page*/
+input[type=text], select, textarea {
+    width: 100%; 
+    max-width: 200%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    color: #16272f;
+    resize: vertical;
+  }
+  input[type=date], select, textarea {
+    width: 100%; /* Full width */
+    max-width: 200%;
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    color: #16272f;
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  .row {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 600px){
+    .row{
+      margin-bottom: 10px;
+    }
+  }
+  
+
+/*form profile page*/
+input[type=text], select, textarea {
+  width: 100%; 
+  max-width: 200%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  color: #16272f;
+  resize: vertical;
+}
+input[type=date], select, textarea {
+  width: 100%; /* Full width */
+  max-width: 200%;
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  color: #16272f;
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.row {
+  margin-bottom: 20px;
+}
+@media (max-width: 600px){
+  .row{
+    margin-bottom: 10px;
+  }
+}
